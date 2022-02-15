@@ -28,11 +28,11 @@
 #include "flags.h"
 #include "fmt/printf.h"
 #include "gui/widgets/assembly.h"
-#include "gui/widgets/dynarec_disassembly.h"
 #include "gui/widgets/breakpoints.h"
 #include "gui/widgets/callstacks.h"
 #include "gui/widgets/console.h"
 #include "gui/widgets/dwarf.h"
+#include "gui/widgets/dynarec_disassembly.h"
 #include "gui/widgets/events.h"
 #include "gui/widgets/filedialog.h"
 #include "gui/widgets/kernellog.h"
@@ -199,7 +199,7 @@ class GUI final {
     int m_currentTexture = 0;
 
     ImVec4 m_backgroundColor = ImColor(114, 144, 154);
-    ImVec2 m_framebufferSize = ImVec2(1, 1); // Size of GLFW window framebuffer
+    ImVec2 m_framebufferSize = ImVec2(1, 1);  // Size of GLFW window framebuffer
     ImVec2 m_renderSize = ImVec2(1, 1);
 
     bool &m_fullscreen = {settings.get<Fullscreen>().value};
